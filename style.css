@@ -244,7 +244,7 @@ body {
 
     color: var(--blue-light);
 
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 700;
 
     letter-spacing: 0.28em;
@@ -1514,7 +1514,7 @@ a:focus-visible {
     .eyebrow {
         margin-bottom: 14px;
 
-        font-size: .62rem;
+        font-size: .70rem;
 
         letter-spacing: .2em;
     }
@@ -1593,7 +1593,7 @@ a:focus-visible {
 
     .memory-2 {
         top: 80px;
-        left: 34%;
+        left: 35.5%;
     }
 
     .memory-3 {
@@ -1603,24 +1603,24 @@ a:focus-visible {
     }
 
     .memory-4 {
-        top: 175px;
+        top: 177px;
         left: 7%;
         right: auto;
     }
 
     .memory-5 {
-        top: 195px;
+        top: 193px;
         right: 7%;
     }
 
     .memory-6 {
-        top: 305px;
-        left: 28%;
+        top: 302px;
+        left: 32%;
         bottom: auto;
     }
 
     .memory-7 {
-        top: 300px;
+        top: 303px;
         left: 3%;
         bottom: auto;
     }
@@ -1632,14 +1632,14 @@ a:focus-visible {
     }
 
     .memory-9 {
-        top: 425px;
+        top: 428px;
         left: 10%;
         right: auto;
         bottom: auto;
     }
 
     .memory-10 {
-        top: 430px;
+        top: 433px;
         left: auto;
         right: 17%;
     }
