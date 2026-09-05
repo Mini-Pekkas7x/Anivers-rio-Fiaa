@@ -460,8 +460,7 @@ wallpaperButtons.forEach(button => {
 function openWallpaper(id) {
 
     const imagePath =
-        `img/wallpaper${id}.jpg`;
-
+        `img/wallpaper ${id}.png`;
 
     wallpaperFull.src =
         imagePath;
@@ -469,14 +468,11 @@ function openWallpaper(id) {
     wallpaperFull.alt =
         `Wallpaper personalizado ${id}`;
 
-
     wallpaperDownload.href =
         imagePath;
 
-
     wallpaperDownload.download =
-        `wallpaper-fia-${id}.jpg`;
-
+        `wallpaper-fia-${id}.png`;
 
     wallpaperModal.classList.add("open");
 
@@ -484,8 +480,7 @@ function openWallpaper(id) {
         "aria-hidden",
         "false"
     );
-
-}
+}   
 
 
 /* =========================================================
