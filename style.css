@@ -1619,7 +1619,7 @@ a:focus-visible {
     }
 
     .memory-7 {
-        top: 315px;
+        top: 317px;
         left: 3%;
         bottom: auto;
     }
@@ -1631,7 +1631,7 @@ a:focus-visible {
     }
 
     .memory-9 {
-        top: 460px;
+        top: 462px;
         left: 10%;
         right: auto;
         bottom: auto;
@@ -1647,7 +1647,7 @@ a:focus-visible {
     /* PROGRESSO */
 
     .progress-container {
-        margin-top: 0;
+        margin-top: 20px;
 
         width: 90%;
     }
