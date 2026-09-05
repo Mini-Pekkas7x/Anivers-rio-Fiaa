@@ -65,9 +65,9 @@ const memoryData = {
         title: "Um pequeno detalhe 🍫",
 
         message:
-            "Você disse que Lacta Oreo é seu doce favorito. Então é claro que alguma referência a ele precisava aparecer por aqui. Afinal, se um docinho consegue melhorar seu dia, ele merece um lugar nesse presente.",
+            "Você me disse que Lacta Oreo é o seu doce favorito, então era impossível deixar esse detalhe de fora.\n🍫Afinal, se uma coisinha tão simples consegue deixar seu dia um pouco melhor, ela merece ter um espacinho nesse presente também.\nE, convenhamos… um presente seu sem chocolate não teria a mesma graça, né? ",
 
-        image: "img/foto1.jpg"
+        image: "img/foto 1.png"
     },
 
 
@@ -75,9 +75,9 @@ const memoryData = {
         title: "Seu universo favorito 🧛",
 
         message:
-            "Entre vampiros, dramas e personagens complicados, existe um certo Damon Salvatore que conquistou um lugar especial. Então essa lembrança também precisava aparecer por aqui.",
+            "Entre vampiros, romances, dramas e personagens complicados, existe um certo Damon Salvatore que claramente ganhou seu coração. 🧛‍♂️ Então, é claro que ele precisava aparecer por aqui. Afinal, quando alguém gosta tanto de um universo, algumas referências simplesmente deixam o presente mais “a sua cara”.",
 
-        image: "img/foto2.jpg"
+        image: "img/foto 2.png"
     },
 
 
@@ -85,9 +85,9 @@ const memoryData = {
         title: "Uma história especial 🌙",
 
         message:
-            "Crepúsculo foi a sua escolha quando perguntamos sobre seu filme favorito. Então essa história também ganhou um pequeno espaço dentro da sua própria história.",
+            "Quando te perguntei qual era o seu filme favorito, a resposta foi Crepúsculo. 🌙 E uma escolha assim não poderia ficar de fora. Então, entre tantas outras pequenas coisas que fazem parte de você, essa história ganhou um cantinho especial por aqui também.",
 
-        image: "img/foto3.jpg"
+        image: "img/foto 3.png"
     },
 
 
@@ -95,9 +95,9 @@ const memoryData = {
         title: "Um lugar para respirar 🌊",
 
         message:
-            "Você disse que passaria um dia inteiro na praia ou em algum lugar com paisagens maravilhosas. Talvez porque alguns lugares simplesmente fazem a gente esquecer um pouco da correria e aproveitar o momento.",
+            "Quando te perguntei onde você passaria um dia inteiro, você escolheu a praia ou algum lugar com paisagens bonitas. 🌊 Talvez porque existem lugares que fazem a gente desacelerar, respirar fundo e simplesmente aproveitar o momento. E espero que você nunca deixe de encontrar esses lugares — e esses momentos — na sua vida.",
 
-        image: "img/foto4.jpg"
+        image: "img/foto 4.png"
     },
 
 
@@ -105,9 +105,9 @@ const memoryData = {
         title: "Um sonho em outro lugar 🗼",
 
         message:
-            "Paris é um dos lugares que você gostaria de conhecer. Espero que algum dia você consiga estar lá de verdade, olhando para uma paisagem que antes existia apenas como um sonho.",
+            "Paris é um dos lugares que você gostaria de conhecer. 🗼✨ Por enquanto, ela talvez exista só como um sonho, uma vontade ou uma imagem bonita na cabeça. Mas espero que um dia você esteja lá de verdade, olhando para tudo aquilo e pensando: “eu realmente consegui chegar aqui.",
 
-        image: "img/foto5.jpg"
+        image: "img/foto 5.png"
     },
 
 
@@ -115,9 +115,9 @@ const memoryData = {
         title: "Pequenas coisas 🌸",
 
         message:
-            "Você escolheu os lírios quando perguntamos sobre flores. Então eles também precisavam estar aqui. Algumas coisas são bonitas justamente porque não precisam de muita explicação.",
+            "Quando te perguntei qual flor você escolheria, você respondeu lírios. 🌸 Então eles também precisavam estar aqui. Porque, às vezes, são justamente essas pequenas escolhas que dizem um pouquinho sobre alguém — e eu queria guardar algumas delas nesse presente.",
 
-        image: "img/foto6.jpg"
+        image: "img/foto 6.png"
     },
 
 
@@ -125,9 +125,9 @@ const memoryData = {
         title: "Coisas para guardar 🧸",
 
         message:
-            "Livros e ursinhos de pelúcia estão entre as coisas que você gostaria de colecionar. E, curiosamente, esse presente também é uma forma de guardar algumas coisas que eu não queria deixar passar.",
+            "Você me contou que gostaria de colecionar livros e ursinhos de pelúcia. 🧸📚 E achei curioso pensar que esse presente também é, de certa forma, uma coleção. Uma coleção de pequenas coisas que você gosta, de lembranças e de detalhes que eu não queria deixar passar.",
 
-        image: "img/foto7.jpg"
+        image: "img/foto 7.png"
     },
 
 
@@ -135,9 +135,9 @@ const memoryData = {
         title: "Algumas músicas ficam 🎵",
 
         message:
-            "Você falou de uma música que lembra uma pessoa ou um momento especial. Algumas músicas acabam carregando memórias junto delas, e talvez seja justamente isso que faz certas músicas serem impossíveis de esquecer.",
+            "Você me falou sobre aquela música que consegue lembrar uma pessoa ou um momento especial. 🎵 E talvez seja justamente isso que torne algumas músicas tão diferentes das outras. Elas deixam de ser apenas músicas e passam a carregar lembranças, sentimentos e momentos que a gente simplesmente não consegue esquecer.",
 
-        image: "img/foto8.jpg"
+        image: "img/foto 8.png"
     },
 
 
@@ -145,9 +145,9 @@ const memoryData = {
         title: "O que realmente importa 💙",
 
         message:
-            "Quando perguntaram o que você escolheria fazer no seu aniversário, você respondeu que queria ficar com seus amigos e sua família. No fim, talvez os melhores presentes sejam justamente as pessoas que tornam os momentos especiais.",
+            "Quando te perguntei o que você gostaria de fazer no seu aniversário, você escolheu algo que talvez diga muito sobre você: estar com seus amigos e sua família. 💙 No fim, talvez seja isso que realmente importa. Não são as coisas enormes ou perfeitas, mas as pessoas que fazem um momento simples se transformar em uma lembrança especial.",
 
-        image: "img/foto9.jpg"
+        image: "img/foto 9.png"
     },
 
 
@@ -155,9 +155,9 @@ const memoryData = {
         title: "Você encontrou tudo ✨",
 
         message:
-            "Cada uma dessas pequenas coisas representa um pedacinho de você. E agora que você abriu todas, tem uma última parte desse presente esperando para ser descoberta.",
+            "E finalmente, você chegou até aqui... ✨ Cada foto, cada detalhe e cada pequeno texto escondia alguma coisa que lembra você. Talvez algumas coisas sejam simples, outras sejam bobas, mas todas foram escolhidas porque, de alguma forma, fazem parte da pessoa incrível que você é.",
 
-        image: "img/foto10.jpg"
+        image: "img/foto 10.png"
     }
 
 };
