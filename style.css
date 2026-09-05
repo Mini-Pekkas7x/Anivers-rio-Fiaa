@@ -1800,6 +1800,64 @@ a:focus-visible {
 
 }
 
+.map-page {
+    padding: 45px 14px 80px;
+}
+
+.map-header {
+    margin-bottom: 20px;
+}
+
+.map-header h1 {
+    font-size: 2rem;
+}
+
+.map-header p {
+    font-size: .85rem;
+    line-height: 1.7;
+}
+
+.map-container {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.location-info {
+    padding: 7px 9px;
+}
+
+.location-info strong {
+    font-size: .7rem;
+}
+
+.location-info span {
+    font-size: .55rem;
+}
+
+.location-dot {
+    width: 11px;
+    height: 11px;
+}
+
+.location-sc {
+    top: 35%;
+    left: 58%;
+}
+
+.location-sp {
+    top: 47%;
+    left: 52%;
+}
+
+.connection-line {
+    width: 65px;
+    top: 42%;
+    left: 55%;
+}
+
+.map-message {
+    font-size: .82rem;
+}
 
 /* =========================================================
    CELULARES PEQUENOS
@@ -2021,6 +2079,478 @@ a:focus-visible {
 
     .footer-info span {
         font-size: 0.52rem;
+    }
+
+}
+
+/* =========================================================
+   MAPA
+========================================================= */
+
+.map-page {
+    min-height: 100vh;
+    padding: 70px 30px 100px;
+    text-align: center;
+}
+
+.map-header {
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.map-header h1 {
+    margin-top: 12px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.map-header p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: var(--text-soft);
+    line-height: 1.8;
+}
+
+.map-section {
+    width: min(1000px, 100%);
+    margin: 0 auto;
+}
+
+.map-container {
+    position: relative;
+    width: min(850px, 100%);
+    margin: 0 auto;
+    aspect-ratio: 1.35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter:
+        brightness(.55)
+        drop-shadow(0 0 20px rgba(59, 130, 246, .25));
+}
+
+/* =========================================================
+   LOCALIZAÇÕES
+========================================================= */
+
+.map-location {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 5;
+}
+
+.location-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:
+        0 0 10px currentColor,
+        0 0 25px currentColor;
+}
+
+.location-dot::after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    animation: locationPulse 2s ease-in-out infinite;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 9px 13px;
+    border-radius: 12px;
+    background: rgba(8, 8, 18, .78);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+}
+
+.location-info strong {
+    font-size: .8rem;
+}
+
+.location-info span {
+    font-size: .65rem;
+    color: var(--text-soft);
+    white-space: nowrap;
+}
+
+/* =========================================================
+   LOCALIZAÇÕES — AJUSTADAS AO MAPA
+========================================================= */
+
+/* Braço do Norte - SC */
+.location-sc {
+    top: 73.5%;
+    left: 54.7%;
+    color: var(--purple-light);
+}
+
+/* São Lourenço da Serra - SP */
+.location-sp {
+    top: 57.9%;
+    left: 57.6%;
+    color: var(--blue-light);
+}
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.map-message {
+    max-width: 650px;
+    margin: 25px auto 30px;
+}
+
+.map-message p {
+    color: var(--text-soft);
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+.map-message strong {
+    color: var(--text);
+}
+
+.map-final-text {
+    margin-top: 18px !important;
+    color: rgba(255, 255, 255, .85) !important;
+}
+
+/* =========================================================
+   ANIMAÇÕES
+========================================================= */
+
+@keyframes locationPulse {
+
+    0%,
+    100% {
+        transform: scale(.8);
+        opacity: .8;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: .2;
+    }
+}
+
+@keyframes lineGlow {
+    from {
+        opacity: .45;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   CONTADOR DA AMIZADE
+========================================================= */
+
+.friendship-counter {
+    width: min(650px, 100%);
+    margin: 35px auto 45px;
+    padding: 28px 25px;
+
+    text-align: center;
+
+    border: 1px solid rgba(139, 92, 246, .18);
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(59, 130, 246, .07),
+            rgba(139, 92, 246, .06)
+        );
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .3),
+        0 0 35px rgba(139, 92, 246, .08);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Brilho suave no fundo */
+
+.friendship-counter::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(139, 92, 246, .12);
+
+    border-radius: 50%;
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+
+/* Título pequeno */
+
+.friendship-counter > span {
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--blue-light);
+
+    font-size: .68rem;
+    font-weight: 700;
+
+    letter-spacing: .22em;
+}
+
+
+/* Texto principal */
+
+.friendship-counter h2 {
+    position: relative;
+
+    margin-bottom: 22px;
+
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+
+    letter-spacing: -.02em;
+}
+
+
+/* Área dos números */
+
+.counter-time {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Cada número */
+
+.counter-time div {
+    min-width: 105px;
+
+    padding: 15px 10px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, .035);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .04);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* Hover */
+
+.counter-time div:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(139, 92, 246, .35);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .25),
+        0 0 20px rgba(139, 92, 246, .1);
+}
+
+
+/* Número */
+
+.counter-time strong {
+    display: block;
+
+    font-size: clamp(1.5rem, 5vw, 2.1rem);
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--blue-light),
+            var(--purple-light)
+        );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+
+/* Nome da unidade */
+
+.counter-time small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: rgba(255, 255, 255, .5);
+
+    font-size: .65rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+}
+
+
+/* Data de início */
+
+.friendship-counter > p {
+    position: relative;
+
+    margin-top: 22px;
+
+    color: rgba(255, 255, 255, .45);
+
+    font-size: .72rem;
+
+    letter-spacing: .05em;
+}
+
+
+/* =========================================================
+   CONTADOR — CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .friendship-counter {
+        width: 95%;
+
+        margin:
+            25px auto 35px;
+
+        padding:
+            25px 14px;
+
+        border-radius: 22px;
+    }
+
+
+    .friendship-counter > span {
+        font-size: .6rem;
+    }
+
+
+    .friendship-counter h2 {
+        margin-bottom: 18px;
+
+        font-size: 1.25rem;
+    }
+
+
+    .counter-time {
+        gap: 8px;
+    }
+
+
+    .counter-time div {
+        min-width: 75px;
+
+        padding:
+            13px 7px;
+
+        border-radius: 13px;
+    }
+
+
+    .counter-time strong {
+        font-size: 1.45rem;
+    }
+
+
+    .counter-time small {
+        margin-top: 6px;
+
+        font-size: .52rem;
+
+        letter-spacing: .08em;
+    }
+
+
+    .friendship-counter > p {
+        margin-top: 18px;
+
+        font-size: .65rem;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .counter-time {
+        gap: 6px;
+    }
+
+
+    .counter-time div {
+        min-width: 68px;
+
+        padding:
+            12px 5px;
+    }
+
+
+    .counter-time strong {
+        font-size: 1.25rem;
+    }
+
+
+    .counter-time small {
+        font-size: .48rem;
     }
 
 }

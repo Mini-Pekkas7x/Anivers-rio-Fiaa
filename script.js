@@ -12,7 +12,10 @@ const TOTAL_MEMORIES = 10;
 const homePage = document.getElementById("home");
 const giftsPage = document.getElementById("gifts-page");
 const letterPage = document.getElementById("letter-page");
-
+const mapPage = document.getElementById("map-page");
+const continueGiftsButton =
+    document.getElementById("continue-gifts");
+    
 const memories = document.querySelectorAll(".memory");
 
 const memoryModal = document.getElementById("memory-modal");
@@ -413,9 +416,6 @@ giftsButton.addEventListener(
     "click",
     () => {
 
-        /* Segurança:
-           só permite se todas foram abertas */
-
         if (
             openedMemories.size !==
             TOTAL_MEMORIES
@@ -423,9 +423,14 @@ giftsButton.addEventListener(
             return;
         }
 
+        showPage(mapPage);
+    }
+);
 
+continueGiftsButton.addEventListener(
+    "click",
+    () => {
         showPage(giftsPage);
-
     }
 );
 
@@ -632,4 +637,62 @@ console.log(
 console.log(
     "Memórias encontradas:",
     TOTAL_MEMORIES
+);
+
+/* =========================================================
+   CONTADOR DA AMIZADE
+========================================================= */
+
+const friendshipStart = new Date(
+    2026,
+    6,
+    5,
+    0,
+    0,
+    0
+);
+
+function updateFriendshipCounter() {
+
+    const now = new Date();
+
+    let difference = now - friendshipStart;
+
+    if (difference < 0) {
+        difference = 0;
+    }
+
+    const totalSeconds =
+        Math.floor(difference / 1000);
+
+    const days =
+        Math.floor(totalSeconds / 86400);
+
+    const hours =
+        Math.floor((totalSeconds % 86400) / 3600);
+
+    const minutes =
+        Math.floor((totalSeconds % 3600) / 60);
+
+    const seconds =
+        totalSeconds % 60;
+
+    document.getElementById("days").textContent =
+        days;
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+}
+
+updateFriendshipCounter();
+
+setInterval(
+    updateFriendshipCounter,
+    1000
 );
