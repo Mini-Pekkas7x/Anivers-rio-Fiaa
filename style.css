@@ -1928,40 +1928,42 @@ a:focus-visible {
 ========================================================= */
 
 .site-footer {
-    width: 100%;
-    margin-top: 80px;
-    padding: 45px 20px 35px;
+    width: min(900px, 92%);
+    margin: 80px auto 30px;
+    padding: 25px 35px;
 
-    border-top: 1px solid rgba(255,255,255,.08);
+    background: rgba(15, 15, 30, .55);
 
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(8,8,17,.15),
-            rgba(5,5,11,.7)
-        );
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-radius: 20px;
 
-    text-align: center;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .25),
+        inset 0 1px 0 rgba(255, 255, 255, .05);
+
+    text-align: left;
 }
 
 .footer-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 .footer-logo {
-    width: 150px;
-    max-width: 40vw;
-    height: auto;
+    width: 115px;
+    height: 70px;
 
-    margin-bottom: 18px;
+    object-fit: contain;
 
     opacity: .9;
 
     filter:
-        drop-shadow(0 0 18px rgba(139,92,246,.25));
+        drop-shadow(0 0 18px rgba(139, 92, 246, .25));
 
     transition:
         transform .3s ease,
@@ -1970,24 +1972,30 @@ a:focus-visible {
 }
 
 .footer-logo:hover {
-    transform: translateY(-3px) scale(1.03);
+    transform: scale(1.04);
 
     opacity: 1;
 
     filter:
-        drop-shadow(0 0 25px rgba(139,92,246,.45));
+        drop-shadow(0 0 25px rgba(139, 92, 246, .45));
 }
 
-.footer-content p {
-    margin: 0 0 7px;
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
-    color: rgba(255,255,255,.65);
+.footer-info p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, .7);
 
     font-size: .8rem;
 }
 
-.footer-content span {
-    color: rgba(255,255,255,.3);
+.footer-info span {
+    color: rgba(255, 255, 255, .3);
 
     font-size: .65rem;
     letter-spacing: .18em;
@@ -2001,23 +2009,30 @@ a:focus-visible {
 @media (max-width: 600px) {
 
     .site-footer {
-        margin-top: 55px;
-        padding: 28px 15px 25px;
+        width: 90%;
+
+        margin: 55px auto 20px;
+
+        padding: 18px 20px;
+
+        border-radius: 16px;
+    }
+
+    .footer-content {
+        gap: 14px;
     }
 
     .footer-logo {
-        width: 75px;
-        max-width: 25vw;
-
-        margin-bottom: 10px;
+        width: 58px;
+        height: 42px;
     }
 
-    .footer-content p {
-        font-size: .68rem;
+    .footer-info p {
+        font-size: .65rem;
     }
 
-    .footer-content span {
-        font-size: .55rem;
+    .footer-info span {
+        font-size: .52rem;
     }
 
 }
