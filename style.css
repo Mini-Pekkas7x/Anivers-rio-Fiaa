@@ -2160,7 +2160,7 @@ a:focus-visible {
 .location-dot::after {
     content: "";
     position: absolute;
-    inset: -7px;
+    inset: -1.5px;
     border: 1px solid currentColor;
     border-radius: 50%;
     animation: locationPulse 2s ease-in-out infinite;
@@ -2222,11 +2222,6 @@ a:focus-visible {
 
 .map-message strong {
     color: var(--text);
-}
-
-.map-final-text {
-    margin-top: 18px !important;
-    color: rgba(255, 255, 255, .85) !important;
 }
 
 /* =========================================================
@@ -2551,6 +2546,22 @@ a:focus-visible {
 
     .counter-time small {
         font-size: .48rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    /* PONTOS DO MAPA NO CELULAR */
+
+    .location-sc {
+        top: 67.8%;
+        left: 53.7%;
+    }
+
+    .location-sp {
+        top: 52%;
+        left: 56.4%;
     }
 
 }
